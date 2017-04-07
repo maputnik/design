@@ -38,7 +38,7 @@ Where `{format}` is either `svg` or `png` and `{type}` is one of
 
 | Type  |                                                         |
 | ----- | ------------------------------------------------------- |
-| Color | <img src="/logos/logo.png" width="200" />               |
+| Color | <img src="/logos/logo-color.png" width="200" />         |
 | Black | <img src="/logos/logo-black.png" width="200" />         |
 | White | <img src="/logos/logo-white-debug.png" width="200" />   |
 
