@@ -11,7 +11,7 @@
   <style>
 
     @keyframes brush-anim {
-      from { transform: rotate(40deg); }
+      from { transform: rotate(25deg); }
       to   { transform: rotate(0deg); }
     }
 
@@ -30,8 +30,8 @@
     }
 
     @keyframes map-anim {
-      from { transform: translate(-4px); }
-      to   { transform: translate( 0px); }
+      from { transform: translate(0px, 8px); }
+      to   { transform: translate(0px, 0px); }
     }
 
     .map {
@@ -44,7 +44,7 @@
     .map {
       will-change: transform;
       animation-timing-function: ease;
-      animation-duration: 1.8s;
+      animation-duration: 1.6s;
       animation-iteration-count: infinite;
       transform: translate(-100px, 0);
       animation-direction: alternate;
@@ -118,26 +118,32 @@
         stroke="#000000"
       />
       <use
+        class="circle5"
         xlink:href="_includes/base.svg#palette__circle5"
         fill="#f7c44c"
       />
       <use
+        class="circle4"
         xlink:href="_includes/base.svg#palette__circle4"
         fill="#4eba6f"
       />
       <use
+        class="circle3"
         xlink:href="_includes/base.svg#palette__circle3"
         fill="#f7c44c"
       />
       <use
+        class="circle2"
         xlink:href="_includes/base.svg#palette__circle2"
         fill="#4eba6f"
       />
       <use
+        class="circle1"
         xlink:href="_includes/base.svg#palette__circle1"
         fill="#f7c44c"
       />
       <use
+        class="circle0"
         xlink:href="_includes/base.svg#palette__circle0"
         fill="#4eba6f"
       />
