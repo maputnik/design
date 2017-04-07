@@ -1,0 +1,145 @@
+#!/usr/bin/env node
+var jsdom = require("jsdom");
+var fs    = require("fs");
+var path  = require("path");
+var svgo  = require("./lib/svgo-promise");
+
+/**
+ * NOTE: This file needs a good tidy, I'll get round to it soon...
+ */
+
+var inputFilePath = path.normalize(
+  path.relative(process.cwd(), process.argv[2])
+);
+var inputDirPath  = path.dirname(inputFilePath);
+
+function log() {
+  var prefix = "[flatten-svg:"+inputFilePath+"]";
+  var args = Array.prototype.slice.call(arguments)
+  if(typeof(args[0]) === "string") {
+    args[0] = prefix + " " + args[0];
+  }
+  else {
+    args.unshift(prefix);
+  }
+  console.error.apply(console, args)
+}
+
+
+var UUID = 0;
+var docs = {};
+var refs = {};
+var processing = {};
+var toImport = [];
+
+function addIncludes(filepath, depth) {
+
+  filepath = path.normalize(filepath);
+  depth = depth || 0;
+
+  if(processing[filepath]) {
+    return;
+  }
+
+  refs[filepath] = refs[filepath] || UUID++;
+  processing[filepath] = true;
+
+  log("processing '%s'", filepath);
+
+  var svgRaw = fs.readFileSync(filepath).toString();
+
+  return svgo(svgRaw)
+    .then(function(svgRaw) {
+      var document = jsdom.jsdom(svgRaw);
+      var svg = docs[filepath] = document.querySelector("svg");
+
+      var files = [];
+
+      function update(el, xlink) {
+        var xlinkParts = xlink.split("#");
+        var xlinkFile  = xlinkParts[0];
+        var xlinkId    = xlinkParts[1];
+
+        var xlinkFullFilepath = path.relative(
+          process.cwd(),
+          path.dirname(filepath)+"/"+xlinkFile
+        );
+
+        if(!refs.hasOwnProperty(xlinkFullFilepath)) {
+          refs[xlinkFullFilepath] = UUID++;
+        }
+
+        var newKey = refs[xlinkFullFilepath]+"/"+xlinkId;
+
+        var basePath = path.dirname(filepath);
+
+        files.push(xlinkFullFilepath);
+        toImport[xlinkFullFilepath] = toImport[xlinkFullFilepath] || [];
+        toImport[xlinkFullFilepath].push({
+          from: xlinkId,
+          to: newKey
+        });
+
+        return newKey;
+      }
+
+      var useEls = svg.querySelectorAll("use");
+      for(var i=0; i<useEls.length; i++) {
+        var el = useEls[i];
+        var xlink = el.getAttribute("xlink:href");
+        var xlinkParts = xlink.split("#");
+        var xlinkFile  = xlinkParts[0];
+        var xlinkId    = xlinkParts[1];
+        var newKey = update(el, xlink);
+
+        el.setAttribute("xlink:href", "#"+newKey);
+      }
+
+      var maskEls = svg.querySelectorAll("*[mask]");
+      for(var i=0; i<maskEls.length; i++) {
+        var el = maskEls[i];
+        var maskAttr = el.getAttribute("mask");
+
+        var xlink = maskAttr.match(/^\s*url\((.*)\)\s*$/)[1];
+        var newKey = update(el, xlink);
+
+        el.setAttribute("mask", "url(#"+newKey+")");
+      }
+
+      files.map(function(filepath) {
+        addIncludes(filepath, depth + 1);
+      })
+    })
+}
+
+function createDefs(out) {
+  var defsEl = jsdom.jsdom("").createElement("defs");
+
+  Object.keys(toImport).forEach(function(filepath) {
+    var doc = docs[
+      path.normalize(filepath)
+    ];
+
+    toImport[filepath].forEach(function(obj) {
+      var el = doc.querySelector("#"+obj.from)
+      if(el) {
+        el.setAttribute("id", obj.to);
+        defsEl.appendChild(el);
+      }
+    })
+  })
+
+  return defsEl;
+}
+
+addIncludes(inputFilePath)
+  .then(createDefs)
+  .then(function(defsEl) {
+    docs[inputFilePath].appendChild(defsEl);
+    console.log(docs[inputFilePath].outerHTML);
+  })
+  .catch(function(err) {
+    console.error(err);
+    process.exit(1);
+  })
+

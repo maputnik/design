@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1200"
+  height="1200"
+  viewBox="0 0 100 100"
+>
+  <mask id="mask">
+    <g fill="white" stroke="black">
+      <g class="map">
+        <use xlink:href="base.svg#map__main" />
+        <use xlink:href="base.svg#map__line1" />
+        <use xlink:href="base.svg#map__line2" />
+        <use xlink:href="base.svg#map__line3" />
+      </g>
+      <g class="palette">
+        <use xlink:href="base.svg#palette__main" />
+        <use xlink:href="base.svg#palette__inner" />
+        <use class="circle5" fill="black" xlink:href="base.svg#palette__circle5" />
+        <use class="circle4" fill="black" xlink:href="base.svg#palette__circle4" />
+        <use class="circle3" fill="black" xlink:href="base.svg#palette__circle3" />
+        <use class="circle2" fill="black" xlink:href="base.svg#palette__circle2" />
+        <use class="circle1" fill="black" xlink:href="base.svg#palette__circle1" />
+        <use class="circle0" fill="black" xlink:href="base.svg#palette__circle0" />
+      </g>
+      <g class="brush">
+        <use xlink:href="base.svg#brush__bottom" />
+        <use xlink:href="base.svg#brush__top" />
+      </g>
+    </g>
+  </mask>
+</svg>

@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+var fs               = require("fs");
+var svg2png          = require('svg2png');
+var imagemin         = require('imagemin');
+var imageminPngquant = require('imagemin-pngquant');
+
+var input  = process.cwd()+"/"+process.argv[2];
+var output = process.cwd()+"/"+process.argv[3];
+
+console.error("%s -> %s", input, output)
+
+var raw = fs.readFileSync(input);
+
+var opts = {
+  plugins: [
+    imageminPngquant({quality: '100'})
+  ]
+}
+
+svg2png(raw)
+  .then(function(data) {
+    return imagemin.buffer(data, opts);
+  })
+  .then(function(data) {
+    fs.writeFileSync(output, data);
+  })
+
+

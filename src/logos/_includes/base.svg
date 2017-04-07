@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1200"
+   height="1200"
+   viewBox="0 0 100 100"
+   id="svg4136"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="base.svg">
+  <metadata
+     id="metadata4157">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4155" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
+     id="namedview4153"
+     showgrid="false"
+     inkscape:zoom="12.62"
+     inkscape:cx="71.332821"
+     inkscape:cy="22.119305"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4136" />
+  <g
+     id="defs"
+     fill="white"
+     stroke="black">
+    <!-- map -->
+    <path
+       id="map__main"
+       stroke-width="2.36599994"
+       stroke-linejoin="round"
+       d="m 18.840461,7.71726 15.440219,7.54223 15.748543,-7.76281 15.701118,7.85767 15.274192,-7.68452 15.305036,46.38231 -22.712068,8.0664 -22.666995,-8.2467 -25.10044,8.0664 -22.6669997,-8.0664 z" />
+    <path
+       id="map__line1"
+       d="m 65.555698,15.06939 7.647149,46.83885"
+       stroke-width="1.10405862" />
+    <path
+       id="map__line2"
+       d="m 50.261376,7.42223 0.716918,46.59981"
+       stroke-width="1.10405862" />
+    <path
+       id="map__line3"
+       d="M 34.01116,15.06939 25.408107,61.66924"
+       stroke-width="1.10405862" />
+    <!-- palette -->
+    <path
+       id="palette__main"
+       stroke-width="2.3"
+       d="m 47.351966,30.887258 c 7.992859,0.22532 16.934435,9.724259 17.95429,15.250419 1.019867,5.52619 -0.742995,11.12429 -4.297803,13.87409 -3.554809,2.7497 -8.600067,2.9054 -8.723205,8.302 -0.09676,4.2375 8.457093,8.4994 8.087738,15.6536 C 59.967347,91.82397 44.865272,97.11707 29.429568,90.06947 20.873518,86.162867 15.181355,76.415867 16.044611,63.831067 c 0.788612,-11.4966 6.276437,-20.17338 11.337056,-24.83236 5.976859,-5.502509 11.977439,-8.336759 19.970299,-8.111449 z" />
+    <circle
+       id="palette__inner"
+       stroke-width="2.3"
+       cx="41.873158"
+       cy="61.900558"
+       r="6.3890409" />
+    <circle
+       id="palette__circle5"
+       cy="44.560471"
+       cx="54.347458"
+       r="4.3361955" />
+    <circle
+       id="palette__circle4"
+       cx="40.442959"
+       cy="41.555351"
+       r="4.3361955" />
+    <circle
+       id="palette__circle3"
+       r="4.3361955"
+       cy="51.101547"
+       cx="29.651464" />
+    <circle
+       id="palette__circle2"
+       cx="25.293333"
+       cy="65.836342"
+       r="4.3361955" />
+    <circle
+       id="palette__circle1"
+       r="4.3361955"
+       cy="79.326027"
+       cx="32.76437" />
+    <circle
+       id="palette__circle0"
+       cx="46.668865"
+       cy="80.571144"
+       r="4.3361955" />
+    <!-- brush -->
+    <path
+       id="brush__bottom"
+       d="m 76.333,89.333008 c -1.645227,-9.793652 -4.37486,-35.260641 -4.319438,-37.887341 0.05546,-2.6267 2.519189,-4.33949 5.360195,-4.31649 2.841005,0.022 5.097033,1.86889 5.312761,4.26909 0.107864,1.2001 -1.575636,28.059876 -2.317518,37.844725 -0.331623,4.373845 -3.309735,4.413302 -4.036,0.09002 z"
+       inkscape:connector-curvature="0"
+       style="stroke-width:2.29999995;stroke-linejoin:round"
+       sodipodi:nodetypes="sccsss" />
+    <path
+       id="brush__top"
+       stroke-linejoin="round"
+       stroke-width="2.3"
+       d="m 77.184011,26.428328 c 0,0 -5.621091,7.02044 -5.621091,11.977439 0,4.957 2.205751,6.87809 5.810837,6.87809 3.605085,0 5.146744,-1.70763 5.289045,-6.73578 0.1423,-5.028159 -5.478791,-12.119749 -5.478791,-12.119749 z" />
+  </g>
+</svg>

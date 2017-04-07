@@ -1,0 +1,14 @@
+#!/bin/bash
+dir="$(dirname "$0")"
+
+mkdir -p $dir/../logos
+$dir/flatten-svg $dir/../src/logos/logo-color.svg       > $dir/../logos/logo-color.svg
+$dir/flatten-svg $dir/../src/logos/logo-white.svg       > $dir/../logos/logo-white.svg
+$dir/flatten-svg $dir/../src/logos/logo-white-debug.svg > $dir/../logos/logo-white-debug.svg
+$dir/flatten-svg $dir/../src/logos/logo-black.svg       > $dir/../logos/logo-black.svg
+$dir/flatten-svg $dir/../src/logos/logo-animated.svg    > $dir/../logos/logo-animated.svg
+
+$dir/svg-to-png $dir/../logos/logo-color.svg       $dir/../logos/logo-color.png 
+$dir/svg-to-png $dir/../logos/logo-white.svg       $dir/../logos/logo-white.png 
+$dir/svg-to-png $dir/../logos/logo-white-debug.svg $dir/../logos/logo-white-debug.png 
+$dir/svg-to-png $dir/../logos/logo-black.svg       $dir/../logos/logo-black.png 
