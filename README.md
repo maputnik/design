@@ -2,12 +2,10 @@
 These are the design resources shared across the Maputnik editor
 
 [![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)][stability]
-[![Build Status](https://circleci.com/gh/orangemug/maputnik-design.png?style=shield)][circleci]
 [![Dependency Status](https://david-dm.org/maputnik/design.svg)][dm-prod]
 [![Dev Dependency Status](https://david-dm.org/maputnik/design/dev-status.svg)][dm-dev]
 
 [stability]:   https://github.com/orangemug/stability-badges#unstable
-[circleci]:    https://circleci.com/gh/maputnik/design
 [dm-prod]:     https://david-dm.org/maputnik/design
 [dm-dev]:      https://david-dm.org/maputnik/design#info=devDependencies
 
