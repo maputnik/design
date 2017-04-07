@@ -1,4 +1,4 @@
-# Maputnik design
+# design
 These are the design resources shared across the Maputnik editor
 
 [![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)][stability]
