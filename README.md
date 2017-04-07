@@ -42,7 +42,7 @@ Where `{format}` is either `svg` or `png` and `{type}` is one of
 | Black | <img src="/logos/logo-black.png" width="200" />         |
 | White | <img src="/logos/logo-white-debug.png" width="200" />   |
 
-**Note:*** The white version has a transparent background but is on a black background above so you can see it.
+**Note:** The white version has a transparent background but is on a black background above so you can see it.
 
 
 #### Advanced
