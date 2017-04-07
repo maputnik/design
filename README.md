@@ -30,7 +30,7 @@ The logo comes in three different versions, please don't change the colors if yo
 
 You can use a logo in the following way
 
-```
+```html
 <img src="node_modules/maputnik-design/logos/logo-{type}.{format}" />
 ```
 
@@ -54,7 +54,7 @@ Including `logos/base.svg` in a page will give you full access to all the elemen
 ### Hosted logos
 The logos are also hosted at 
 
-```
+```html
 <img src="http://orangemug.github.io/maputnik-design/logos/logo-{type}.{format}" />
 ```
 
