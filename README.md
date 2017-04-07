@@ -48,7 +48,7 @@ Where `{format}` is either `svg` or `png` and `{type}` is one of
 #### Advanced
 Including `logos/base.svg` in a page will give you full access to all the elements to style as you like, including animation. See [/logos/logo-animated.svg](/logos/logo-animated.svg) for an example
 
-<img src="https://orangemug.github.io/maputnik-logos/logos/logo-animated.svg" width="200" />
+<img src="https://orangemug.github.io/maputnik-design/logos/logo-animated.svg" width="200" />
 
 
 ### Hosted logos
