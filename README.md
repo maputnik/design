@@ -55,7 +55,7 @@ Including `logos/base.svg` in a page will give you full access to all the elemen
 The logos are also hosted at 
 
 ```
-<img src="http://maputnik.github.io/design/logos/logo-{type}.{format}" />
+<img src="http://orangemug.github.io/maputnik-design/logos/logo-{type}.{format}" />
 ```
 
 
