@@ -1,6 +1,6 @@
 {
   "name": "maputnik-design",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "devDependencies": {
     "imagemin": "^5.2.2",
     "imagemin-pngquant": "^5.0.0",
