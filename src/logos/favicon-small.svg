@@ -6,15 +6,9 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   width="1200"
   height="1200"
-  viewBox="0 0 100 100"
+  viewBox="9 30 64 64"
 >
-  <g fill="white" stroke="none" mask="url(_includes/outline-mask.svg#mask)">
-    <g class="map">
-      <use xlink:href="_includes/base.svg#map__main" />
-      <use xlink:href="_includes/base.svg#map__line1" />
-      <use xlink:href="_includes/base.svg#map__line2" />
-      <use xlink:href="_includes/base.svg#map__line3" />
-    </g>
+  <g fill="black" stroke="none" mask="url(_includes/outline-mask.svg#mask)">
     <g class="palette">
       <use xlink:href="_includes/base.svg#palette__main" />
       <use xlink:href="_includes/base.svg#palette__circle5" />
@@ -23,10 +17,6 @@
       <use xlink:href="_includes/base.svg#palette__circle2" />
       <use xlink:href="_includes/base.svg#palette__circle1" />
       <use xlink:href="_includes/base.svg#palette__circle0" />
-    </g>
-    <g class="brush">
-      <use xlink:href="_includes/base.svg#brush__bottom" />
-      <use xlink:href="_includes/base.svg#brush__top" />
     </g>
   </g>
 </svg>

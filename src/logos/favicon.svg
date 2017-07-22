@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1200"
+  height="1200"
+  viewBox="-5 -5 110 110"
+>
+  <rect x="-10" y="-10" width="120" height="120" fill="#f3f3f3" />
+  <g>
+    <g class="map">
+      <use
+        xlink:href="_includes/base.svg#map__main"
+        fill="#4eba6f"
+        stroke="#000000"
+      />
+      <use
+        xlink:href="_includes/base.svg#map__line1"
+        fill="none"
+        stroke="#000000"
+      />
+      <use
+        xlink:href="_includes/base.svg#map__line2"
+        fill="none"
+        stroke="#000000"
+      />
+      <use
+        xlink:href="_includes/base.svg#map__line3"
+        fill="none"
+        stroke="#000000"
+      />
+    </g>
+    <g class="palette">
+      <use
+        xlink:href="_includes/base.svg#palette__main"
+        fill="#ffffff"
+        stroke="#000000"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__inner"
+        fill="none"
+        stroke="#000000"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__circle5"
+        fill="#f7c44c"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__circle4"
+        fill="#4eba6f"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__circle3"
+        fill="#f7c44c"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__circle2"
+        fill="#4eba6f"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__circle1"
+        fill="#f7c44c"
+      />
+      <use
+        xlink:href="_includes/base.svg#palette__circle0"
+        fill="#4eba6f"
+      />
+    </g>
+    <g class="brush">
+      <use
+        xlink:href="_includes/base.svg#brush__bottom"
+        fill="#f7c44c"
+        stroke="#000000"
+      />
+      <use
+        xlink:href="_includes/base.svg#brush__top"
+        fill="#ffffff"
+        stroke="#000000"
+      />
+    </g>
+  </g>
+</svg>

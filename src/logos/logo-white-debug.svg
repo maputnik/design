@@ -18,7 +18,6 @@
     </g>
     <g class="palette">
       <use xlink:href="_includes/base.svg#palette__main" />
-      <use xlink:href="_includes/base.svg#palette__inner" />
       <use xlink:href="_includes/base.svg#palette__circle5" />
       <use xlink:href="_includes/base.svg#palette__circle4" />
       <use xlink:href="_includes/base.svg#palette__circle3" />
