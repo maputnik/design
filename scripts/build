@@ -13,6 +13,7 @@ $dir/flatten-svg $dir/../src/logos/favicon-small.svg    > $dir/../logos/favicon-
 $dir/svg-to-png $dir/../logos/logo-color.svg       $dir/../logos/logo-color.png 
 $dir/svg-to-png $dir/../logos/logo-white.svg       $dir/../logos/logo-white.png 
 $dir/svg-to-png $dir/../logos/logo-white-debug.svg $dir/../logos/logo-white-debug.png 
+$dir/svg-to-png $dir/../logos/logo-black.svg       $dir/../logos/logo-black.png
 
 $dir/svg-to-png $dir/../logos/favicon-small.svg                          $dir/../logos/favicon-small.png 
 $dir/svg-to-png $dir/../logos/favicon-small.svg --width=32  --height=32  $dir/../logos/favicon-32x32.png 
