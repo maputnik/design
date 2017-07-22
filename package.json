@@ -6,6 +6,7 @@
     "imagemin-pngquant": "^5.0.0",
     "jsdom": "^9.12.0",
     "svg2png": "^4.1.1",
-    "svgo": "^0.7.2"
+    "svgo": "^0.7.2",
+    "yargs": "^8.0.2"
   }
 }

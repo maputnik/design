@@ -18,7 +18,7 @@
       </g>
       <g class="palette">
         <use xlink:href="base.svg#palette__main" />
-        <use xlink:href="base.svg#palette__inner" />
+        <use fill="black" xlink:href="base.svg#palette__inner" />
         <use class="circle5" fill="black" xlink:href="base.svg#palette__circle5" />
         <use class="circle4" fill="black" xlink:href="base.svg#palette__circle4" />
         <use class="circle3" fill="black" xlink:href="base.svg#palette__circle3" />

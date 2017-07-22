@@ -7,8 +7,16 @@ $dir/flatten-svg $dir/../src/logos/logo-white.svg       > $dir/../logos/logo-whi
 $dir/flatten-svg $dir/../src/logos/logo-white-debug.svg > $dir/../logos/logo-white-debug.svg
 $dir/flatten-svg $dir/../src/logos/logo-black.svg       > $dir/../logos/logo-black.svg
 $dir/flatten-svg $dir/../src/logos/logo-animated.svg    > $dir/../logos/logo-animated.svg
+$dir/flatten-svg $dir/../src/logos/favicon.svg          > $dir/../logos/favicon.svg
+$dir/flatten-svg $dir/../src/logos/favicon-small.svg    > $dir/../logos/favicon-small.svg
 
 $dir/svg-to-png $dir/../logos/logo-color.svg       $dir/../logos/logo-color.png 
 $dir/svg-to-png $dir/../logos/logo-white.svg       $dir/../logos/logo-white.png 
 $dir/svg-to-png $dir/../logos/logo-white-debug.svg $dir/../logos/logo-white-debug.png 
-$dir/svg-to-png $dir/../logos/logo-black.svg       $dir/../logos/logo-black.png 
+$dir/svg-to-png $dir/../logos/logo-black.svg       $dir/../logos/logo-black.png
+
+$dir/svg-to-png $dir/../logos/favicon-small.svg                          $dir/../logos/favicon-small.png 
+$dir/svg-to-png $dir/../logos/favicon-small.svg --width=32  --height=32  $dir/../logos/favicon-32x32.png 
+$dir/svg-to-png $dir/../logos/favicon-small.svg --width=16  --height=16  $dir/../logos/favicon-16x16.png 
+$dir/svg-to-png $dir/../logos/favicon.svg                                $dir/../logos/favicon.png 
+$dir/svg-to-png $dir/../logos/favicon.svg       --width=152 --height=152 $dir/../logos/favicon-152x152.png 

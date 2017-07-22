@@ -1,11 +1,19 @@
 #!/usr/bin/env node
+var yargs            = require('yargs');
 var fs               = require("fs");
 var svg2png          = require('svg2png');
 var imagemin         = require('imagemin');
 var imageminPngquant = require('imagemin-pngquant');
 
-var input  = process.cwd()+"/"+process.argv[2];
-var output = process.cwd()+"/"+process.argv[3];
+
+var argv = yargs
+  .describe('width', 'Width of output image')
+  .describe('height', 'Height of output image')
+  .argv;
+
+
+var input  = process.cwd()+"/"+argv._[0];
+var output = process.cwd()+"/"+argv._[1];
 
 console.error("%s -> %s", input, output)
 
@@ -17,12 +25,20 @@ var opts = {
   ]
 }
 
-svg2png(raw)
+var svgOpts = {
+  width: argv.width,
+  height: argv.height
+}
+
+svg2png(raw, svgOpts)
   .then(function(data) {
     return imagemin.buffer(data, opts);
   })
   .then(function(data) {
     fs.writeFileSync(output, data);
+  })
+  .catch(function(err) {
+    console.error("Err:", err);
   })
 
 
