@@ -7,6 +7,7 @@ $dir/flatten-svg $dir/../src/logos/logo-white.svg       > $dir/../logos/logo-whi
 $dir/flatten-svg $dir/../src/logos/logo-white-debug.svg > $dir/../logos/logo-white-debug.svg
 $dir/flatten-svg $dir/../src/logos/logo-black.svg       > $dir/../logos/logo-black.svg
 $dir/flatten-svg $dir/../src/logos/logo-animated.svg    > $dir/../logos/logo-animated.svg
+$dir/flatten-svg $dir/../src/logos/logo-loading.svg    > $dir/../logos/logo-loading.svg
 $dir/flatten-svg $dir/../src/logos/favicon.svg          > $dir/../logos/favicon.svg
 $dir/flatten-svg $dir/../src/logos/favicon-small.svg    > $dir/../logos/favicon-small.svg
 
