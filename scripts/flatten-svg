@@ -69,7 +69,7 @@ function addIncludes(filepath, depth) {
           refs[xlinkFullFilepath] = UUID++;
         }
 
-        var newKey = refs[xlinkFullFilepath]+"/"+xlinkId;
+        var newKey = refs[xlinkFullFilepath]+"--"+xlinkId;
 
         var basePath = path.dirname(filepath);
 
